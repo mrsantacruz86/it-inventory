@@ -1,6 +1,6 @@
 // importing libraries
 
-import { config } from 'dotenv';
+import 'dotenv/config';
 import Express from 'express';
 import Mongoose from 'mongoose';
 import Cors from 'cors';
