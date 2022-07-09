@@ -1,0 +1,107 @@
+{
+  "houses": [
+    "22",
+    "23",
+    "25",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "40",
+    "41",
+    "42",
+    "43"
+  ],
+  "houseAuditItems": [
+    {
+      "name": "medication",
+      "label": "Medication",
+      "max": 20,
+      "scores": [20, 10, 0]
+    },
+    {
+      "name": "ss",
+      "label": "Safety and Security",
+      "max": 20,
+      "scores": [20, 10, 0]
+    },
+    {
+      "name": "hc",
+      "label": "Health and Cleanliness",
+      "max": 20,
+      "scores": [20, 10, 0]
+    },
+    {
+      "name": "documentation",
+      "label": "Documentation",
+      "max": 10,
+      "scores": [10, 5, 0]
+    },
+    {
+      "name": "organization",
+      "label": "Organization",
+      "max": 10,
+      "scores": [10, 5, 0]
+    },
+    {
+      "name": "equipment",
+      "label": "Furniture and Equipment",
+      "max": 10,
+      "scores": [10, 5, 0]
+    },
+    {
+      "name": "pr",
+      "label": "Program Requirements",
+      "max": 5,
+      "scores": [5, 0]
+    },
+    {
+      "name": "supplies",
+      "label": "Supplies and Storage",
+      "max": 5,
+      "scores": [5, 0]
+    }
+  ],
+  "initialValues": {
+    "maintenance": {
+      "findings": [],
+      "max": 16,
+      "score": 100
+    },
+    "auditor": "Nelson Diaz",
+    "house": "",
+    "department": "",
+    "items": {
+      "medication": {
+        "score": 20
+      },
+      "ss": {
+        "score": 20
+      },
+      "hc": {
+        "score": 20
+      },
+      "documentation": {
+        "score": 10
+      },
+      "organization": {
+        "score": 10
+      },
+      "equipment": {
+        "score": 10
+      },
+      "pr": {
+        "score": 5
+      },
+      "supplies": {
+        "score": 5
+      }
+    },
+    "score": 100
+  }
+}
