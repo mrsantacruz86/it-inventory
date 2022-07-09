@@ -62,6 +62,7 @@ export default {
       // console.log("Verifiying token: ", token);
       verifyJWToken(token)
         .then((decodedtoken) => {
+          // eslint-disable-next-line no-underscore-dangle
           req.userId = decodedtoken._id;
           // res.status(200).json({message:"Authorization Granted!"});
           next();

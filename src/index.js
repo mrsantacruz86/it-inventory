@@ -36,7 +36,7 @@ app.use(routes);
 
 // Connect to the Mongo DB
 const MONGODB_URI =
-  process.env.MONGODB_URI || 'mongodb://localhost/pqi-database';
+  process.env.MONGODB_URI || 'mongodb://localhost/it-inventory';
 
 Mongoose.connect(MONGODB_URI, { useNewUrlParser: true, autoIndex: false })
   .then(() => console.log('MongoDB connected successfuly'))
