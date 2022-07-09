@@ -1,13 +1,13 @@
 // USER ROUTES
 import { Router } from 'express';
+import { userController } from '../../controllers';
 
 const router = Router();
-const { userController } = require('../../controllers');
 
-// Matches with "/api/books"
+// Matches with "/api/users"
 router.route('/').get(userController.getAll).post(userController.create);
 
-// Matches with "/api/books/:id"
+// Matches with "/api/users/:id"
 router
   .route('/:id')
   .get(userController.findById)
