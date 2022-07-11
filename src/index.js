@@ -21,7 +21,8 @@ const limiter = RateLimit({
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === 'production') {
-  app.use(Express.static('client/build'));
+  app.use(Express.static('../client/build'));
+  // path.join(__dirname,
 }
 
 // prebuild middlewares
