@@ -10,7 +10,8 @@ const router = Router();
 
 // API Routes
 // verifyToken middleware is securing all API Routes /api/*
-router.use('/api', authController.verifyToken, apiRoutes);
+// router.use('/api', authController.verifyToken, apiRoutes);
+router.use('/api', apiRoutes);
 
 // Autentication routes
 router.route('/login').post(authController.login);

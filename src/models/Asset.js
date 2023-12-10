@@ -5,11 +5,19 @@ import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const AssetSchema = new Schema({
-  house: {
+  assetName: {
     type: String,
     required: true,
   },
-  auditor: {
+  brand: {
+    type: String,
+    required: true,
+  },
+  model: {
+    type: String,
+    required: true,
+  },
+  sn: {
     type: String,
     required: true,
   },
@@ -17,17 +25,12 @@ const AssetSchema = new Schema({
     type: Date,
     default: Date.now(),
   },
-  department: {
+  assignedTo: {
     type: String,
     required: true,
   },
   score: {
     type: Number,
-  },
-  maintenance: {
-    findings: [String],
-    max: { type: Number, default: 16 },
-    score: { type: Number, default: 100 },
   },
 });
 
